@@ -1,0 +1,17 @@
+/* This design is inspired by Zed Dash's project */
+/* https://codepen.io/z-/pen/OBPJKK */
+:root {
+  --def-transition-duration: 0.2s;
+
+  --color-cloudy: #5f7c9c;
+  --color-cloudy-shade: #56708c;
+
+  --color-sunny: #3f7abc;
+  --color-sunny-shade: #396ea9;
+
+  --color-rainy: #26323e;
+  --color-rainy-shade: #222d38;
+
+  --color-thunderstorms: #101c29;
+  --color-thunderstorms-shade: #0e1925;
+}

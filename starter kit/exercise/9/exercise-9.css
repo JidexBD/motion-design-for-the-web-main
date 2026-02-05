@@ -1,0 +1,26 @@
+/* Inspired by: https://codepen.io/webstoryboy/pen/rrLdQX */
+:root {
+  --loader-text-color: #f6e9fe;
+  --loader-dot-color: #a51ff6;
+  --loader-bg: #100319;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+.loader-container {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: var(--loader-bg);
+  display: grid;
+  place-content: center;
+  transition:
+    opacity 0.4s ease-in-out,
+    visibility 0.4s ease-in-out;
+}
+
+/* Air */
