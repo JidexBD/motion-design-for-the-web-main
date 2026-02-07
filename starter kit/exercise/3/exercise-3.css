@@ -36,3 +36,15 @@ nav ul a {
 }
 
 /* Air */
+.btn {
+  /* transition:
+    bacground-color 0.4s ease-in-out,
+    color 0.4s ease-in-out,
+    border-color 0.4s; */
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  background-color: white;
+  color: #151618;
+  border: #151618 1px solid;
+}
