@@ -15,3 +15,15 @@ html {
 }
 
 /* Air */
+@keyframes breathe {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+#loader-icon {
+  animation: 3s ease-in-out infinite alternate breathe;
+}

@@ -19,10 +19,13 @@
       rel="stylesheet"
     />
 
-    <style></style>
+    <link rel="stylesheet" href="/starter kit/exercise/8/exercise-8.css" />
   </head>
   <body>
     <!-- Air -->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <!-- End Air -->
 
     <section id="page-content">
@@ -201,6 +204,13 @@
 
     <script>
       // Air
+      const loaderContainer = document.querySelector(".loader-container");
+      const pageContent = document.querySelector("#page-content");
+
+      window.addEventListener("load", () => {
+        loaderContainer.classList.add("hidden");
+        pageContent.classList.add("visible");
+      });
     </script>
   </body>
 </html>

@@ -204,3 +204,47 @@ figure footer {
 }
 
 /* Air */
+.loader-container {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: #0c0c0c;
+  display: grid;
+  place-content: center;
+}
+
+.loader {
+  width: 4rem;
+  height: 4rem;
+  border: 0.4rem solid #f27541;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+
+  /* animate */
+  animation: 0.8s ease-in-out infinite alternate spinner;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0 deg) scale(1);
+  }
+  to {
+    transform: rotate(1turn) scale(1.2);
+  }
+}
+
+.loader-container.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#page-content {
+  opacity: 0;
+  transform: translate3d(0, -1rem, 0);
+}
+
+#page-content.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
