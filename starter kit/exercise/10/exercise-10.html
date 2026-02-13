@@ -19,12 +19,12 @@
       rel="stylesheet"
     />
 
-    <style></style>
+    <link rel="stylesheet" href="/starter kit/exercise/10/exercise-10.css" />
   </head>
   <body>
     <div class="container">
       <div class="well">
-        <img src="images/logo-nn.svg" alt="Logo" />
+        <img src="/starter kit/images/logo-nn.svg" alt="Logo" />
 
         <form action="#" method="post">
           <hgroup>
@@ -65,7 +65,10 @@
         <p>Don't have an account? <a href="#">Sign Up</a>.</p>
       </div>
 
-      <img src="illustrations/captain@c.svg" alt="Captain" />
+      <img
+        src="/starter kit/illustrations/zaidoopro-romantic-10068791_1280.png"
+        alt="Captain"
+      />
     </div>
 
     <script>
@@ -76,6 +79,18 @@
 
       submitButton.addEventListener("click", (e) => {
         // Air
+        e.preventDefault();
+        // add the loading class
+        submitButton.classList.add("loading");
+
+        setTimeout(() => {
+          // remove loading lass
+          submitButton.classList.remove("loading");
+          submitButton.classList.add("success");
+
+          // change button text
+          submitButtonText.innerText = "Login successful";
+        }, 1000);
       });
     </script>
   </body>
